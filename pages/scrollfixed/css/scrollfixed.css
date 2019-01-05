@@ -1,0 +1,28 @@
+body {
+	height:2000px;
+	background:#ffd0bf;
+}
+
+.banner {
+	font-family: Monospace,Courier;
+	font-size: 25px;
+	color:#999999;
+}
+#helpmessage{
+	position:relative;
+	top:40px;
+	left:50px;
+}
+
+#staticmessage {
+		position:fixed;
+		top:200px;
+		left:100px;
+}
+
+#scrollingmessage {
+		position:relative;
+		top: 1017px;
+		left:107px;
+}
+
