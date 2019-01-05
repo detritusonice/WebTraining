@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<title>Be a painter</title>
+		<link rel="stylesheet" href="css/blockpaint.css">
+	<script type="application/javascript">
+		var paintcolor="#ffffff";
+		
+		// cannot directly call element.style.property except if an inline style is defined 
+		// IE and Mozilla/Opera use different strategies, hence this function 
+		
+		function getStyle( element) {
+			if (element.currentStyle)
+				return element.currentStyle;
+			return document.defaultView.getComputedStyle(element,null);
+		}
+
+		// params are strings, element id , and style property
+		function getStylePropertyVal(id,property) {
+			var element= document.getElementById(id);
+			if (element.currentStyle)
+				return element.currentStyle[property];
+			return document.defaultView.getComputedStyle(element,null)[property];
+		}
+
+		function paletteClick(id) {
+			// paintcolor=getStyle(document.getElementById(id)).backgroundColor;  //one way- get style object
+			paintcolor=getStylePropertyVal(id,"backgroundColor");		      
+			document.getElementById("current").style.backgroundColor=paintcolor;
+		}
+
+		function paintingClick(id) {
+			document.getElementById(id).style.backgroundColor=paintcolor;
+		}
+	</script>
+	</head>
+	<body>
+		<div id="incentive">
+			<h1>Draw your masterpiece</h1>
+			<p id="instructions">Pick your color from the palette and color your own painting</p>
+		</div>
+		<div id="paintspace">
+			<div id="palette">
+				<div class="colorbox" id="redbox" title="Red" onclick ="paletteClick(this.id);"></div>
+				<div class="colorbox" id="bluebox" title="Blue" onclick ="paletteClick(this.id);"></div>
+				<div class="colorbox" id="yellowbox" title="Yellow" onclick ="paletteClick(this.id);"></div>
+				<div class="colorbox" id="whitebox" title="White" onclick ="paletteClick(this.id);"></div>
+			</div>
+			
+			<div id="current" class="indicator"></div>
+			<div id="painting">
+				<div id="l0" class="blockline">
+					<div id="l0b0" class="block0" onclick ="paintingClick(this.id);"></div>
+					<div id="l0b1" class="block1" onclick ="paintingClick(this.id);"></div>
+					<div id="l0b2" class="block2" onclick ="paintingClick(this.id);"></div>
+					<div id="l0b3" class="block3" onclick ="paintingClick(this.id);"></div>
+				</div>
+
+				<div id="l1" class="blockline">
+					<div id="l1b0" class="block0" onclick ="paintingClick(this.id);"></div>
+					<div id="l1b1" class="block1" onclick ="paintingClick(this.id);"></div>
+					<div id="l1b2" class="block2" onclick ="paintingClick(this.id);"></div>
+					<div id="l1b3" class="block3" onclick ="paintingClick(this.id);"></div>
+				</div>
+
+				<div id="l2" class="blockline">
+					<div id="l2b0" class="block0" onclick ="paintingClick(this.id);"></div>
+					<div id="l2b1" class="block1" onclick ="paintingClick(this.id);"></div>
+					<div id="l2b2" class="block2" onclick ="paintingClick(this.id);"></div>
+					<div id="l2b3" class="block3" onclick ="paintingClick(this.id);"></div>
+				</div>
+
+				<div id="l3" class="blockline">
+					<div id="l3b0" class="block0" onclick ="paintingClick(this.id);"></div>
+					<div id="l3b1" class="block1" onclick ="paintingClick(this.id);"></div>
+					<div id="l3b2" class="block2" onclick ="paintingClick(this.id);"></div>
+					<div id="l3b3" class="block3" onclick ="paintingClick(this.id);"></div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

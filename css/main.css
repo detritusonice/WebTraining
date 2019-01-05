@@ -1,0 +1,19 @@
+body {
+	background-color:#6792d4;
+	font-family:verdana;
+	font-color:#220000;
+}
+
+h1 {
+	font-size:50px;
+	color:maroon;
+}
+		
+.resultsbox {
+	text-align:center;
+}
+
+.results {
+	color:crimson;
+}
+

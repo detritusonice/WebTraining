@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Random background</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="./css/randomBg.css">
+	</head>
+	<body>
+		<script>
+			function changeColor() {
+				var r,g,b;
+				r=Math.floor(256*Math.random()).toString(16);
+				g=Math.floor(256*Math.random()).toString(16);
+				b=Math.floor(256*Math.random()).toString(16);
+				document.body.style.backgroundColor="#"+r+g+b;
+			}
+		</script>
+		<p id="buttontitle">Press to change Background Color</p>
+		<button id="buttonswitch" type="button" onclick ="changeColor()">Press here</button>
+	</body>
+</html>
+		

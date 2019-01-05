@@ -1,0 +1,23 @@
+body {
+	background-color:#31fde1;
+	text-align:center;
+}
+
+#buttonswitch {
+	background-color:Maroon;
+	border:none;
+	padding: 20px 30px;
+	text-align:center;
+	text-decoration:none; 
+	display: inline-block;
+	color:white;
+	font-size: 20px;
+	text-shadow: 2px 2px 4px black;
+}
+
+#buttontitle {
+	font-size:40px;
+	color:"black";
+	text-shadow:4px 4px 8px grey;
+	text-align:center;
+}

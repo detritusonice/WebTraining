@@ -1,0 +1,27 @@
+body {
+	font-family: verdana;
+	color: darkred;
+	background-color: #222222;
+}
+
+.textcontainer {
+	text-align: center;
+}
+
+.doorbox {
+	text-align: center;
+}
+
+.doorspace {
+	display: inline-block;
+	margin:	15px; 
+	border: solid 2px;
+	color: black;
+	background-color:#111100;
+}
+
+img {
+	height:	200px;
+	width: 100px;
+}
+
