@@ -1,0 +1,42 @@
+body {
+	background-color:#222222;
+}
+
+#calendarContainer {
+	position:absolute;
+	text-align:center;
+	top:100px;
+	left:300px;
+	background-color:#444444;
+}
+#daycontainer {
+	height:300px;
+	display:block;
+}
+
+.day {
+	font-family:verdana;
+	font-size:20px;
+	background-color:#ff7700;
+	color:yellow;
+	display:inline-block;
+	float:left;
+	width:100px;
+	height:100px;
+	border:none;
+	margin:5px 5px 0px 5px;
+}
+
+#message {
+	font-family:verdana;
+	background-color:lime;
+	font-size:30px;
+	color:#552200;
+	display:block;
+	width:inherit;
+	height:100px;
+	float:bottom;
+	margin:0px 5px 5px 5px;
+}
+
+

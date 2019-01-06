@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="./css/dayofweek.css">
+	</head>
+
+	<script type="application/javascript">
+		var actual;//hold the actual day of week
+		var prev; //the active day
+		var days=["sun","mon","tue","wed","thu","fri","sat"];
+		var messages=[ "Sunday, time to relax...",
+				"It's Monday, are you ready?",
+				"It's Tuesday, the most productive day!",
+				"It's Wednesday already...how days pass!",
+				"Thursday is the last true working day.",
+				"Hurray for Friday!",
+				"Saturday, chill." ];
+		// finds the day of week and assigns the appropriate id
+		function initialize() {
+			var d  = new Date();
+			var day= d.getDay();
+			actual=days[day];
+			prev=days[(day+1)%7];//set initial value for prev different than actual
+			setDay(day);
+			//for (var i=0;i<7;i++)
+			//	document.getElementById(days[i]).onclick("setDay("+i.toString(10)+")");
+		}
+
+		// sets the style values and messages for a particular day id, also recording previous 
+		function setDay(day) {
+			id=days[day];
+			if (id==prev) return;
+
+			var element=document.getElementById(id);
+			element.style.height="295px";
+			element.style.backgroundColor="lime";
+			document.getElementById("message").innerHTML=messages[day];
+			element=document.getElementById(prev);
+			element.style.height=(prev==actual?"295px":"100px");
+			element.style.backgroundColor=(prev==actual?"#ff4400":"#ff7700");
+			prev=id;
+		}
+	</script>
+
+	<body onload="initialize()">
+		<div id="calendarContainer">
+			<div id="daycontainer">
+				<div class="day" id="sun" onclick="setDay(0)">Sun</div>
+				<div class="day" id="mon" onclick="setDay(1)">Mon</div>
+				<div class="day" id="tue" onclick="setDay(2)">Tue</div>
+				<div class="day" id="wed" onclick="setDay(3)">Wed</div>
+				<div class="day" id="thu" onclick="setDay(4)">Thu</div>
+				<div class="day" id="fri" onclick="setDay(5)">Fri</div>
+				<div class="day" id="sat" onclick="setDay(6)">Sat</div>
+			</div>
+			<div id="message">Some text</div>
+		</div>
+	</body>
+</html>
