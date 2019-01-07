@@ -1,0 +1,29 @@
+body {
+	background-color:black;
+	text-align:center;
+}
+
+
+#dancefloor {
+	position:absolute;
+	left:200px;
+	width:1000px;
+	height:700px;
+	background-color:#222222;
+}
+
+.strip {
+	width:inherit;
+	height:50px;
+	display:block;
+}
+
+.colorbox {
+	width:50px;
+	height:inherit;
+	background-color:inherit;
+	box-shadow:none;
+	display:inline-block;
+	float:left;
+	z-index:1;
+}
