@@ -1,0 +1,78 @@
+body {
+	background-color:#aaaaaa;
+}
+
+#workspace {
+	margin:auto;
+	width:860px;
+	height:600px;
+	border:1px solid #dddddd;
+	background-color:#eeeeee;
+	box-shadow:5px 5px 10px 10px;
+}
+
+#instructions {
+	font-family:monospace;
+	font-size:20px;
+	width:250px;
+	border:1px solid blue;
+	word-wrap:break-word;
+	text-align:left;
+	text-color:#77777;
+	display:inline-block;
+	float:left;
+	margin-left:50px;
+	margin-top:30px;
+}
+
+.bouncebox {
+	width:200px;
+	height:400px;
+	margin-top:30px;
+	margin-right:50px;
+	border:1px solid black;
+	border-bottom:10px solid black;
+	display:inline-block;
+	float:right;
+}
+@keyframes bouncing {
+	0% { left:50px;top:0px;}
+	100% { left:50px;top:300px;}
+}
+
+.ball {
+	position:relative;
+	width:100px;
+	left:50px;
+	height:100px;
+	border-radius:50%;
+	background-color:lime; 
+}
+
+#ball1 {
+	animation-name:bouncing;
+	animation-duration:0.35s;
+	animation-iteration-count:infinite;
+	animation-timing-function:ease-in;
+	animation-direction:alternate;
+}
+
+.balltext {
+	position:relative;
+	top:35%;
+	text-align:center;
+	color:brown;
+	font-size:17px;
+}
+
+#praise {
+	width:760px;	
+	height:100px;
+	display:inline-block;
+	float:bottom;
+	margin-left:50px;
+	margin-top:30px;
+	vertical-align:center;
+	border:1px solid red;
+}
+
