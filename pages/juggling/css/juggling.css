@@ -1,0 +1,104 @@
+body {
+	background-color:#222222;
+}
+
+#jugglespace {
+	margin-left:100px;
+	width:500px;
+	height:600px;
+	background-color:black;
+}
+
+#hand1 {
+	display:inline-block;
+	width:100px;
+	height:50px;
+	position: absolute;
+	left:100px;
+	top: 0px;
+	z-index:3;
+	animation-name: lefthand;
+        animation-duration:0.5s;
+      	animation-iteration-count: infinite;
+
+}
+
+#hand2 {
+	display:inline-block;
+	width:100px;
+	height:50px;
+	position: absolute;
+	left:100px;
+	top: 0px;
+	z-index:3;
+	animation-name: righthand;
+        animation-duration:0.5s;
+      	animation-iteration-count: infinite;
+}
+
+.juggled {
+	display:inline-block;
+	width:50px;
+	height:50px;
+	position: absolute;
+	left:100px;
+	top: 0px;
+	z-index:5;
+	animation-name: juggle;
+        animation-duration:0.6s;
+      	animation-iteration-count: infinite;
+}
+
+#orange1{
+	animation-delay:0s;
+}
+
+#orange2 {
+	animation-delay:-0.2s;
+}
+
+#orange3 {
+	animation-delay:-0.4s;
+}
+
+
+@keyframes bouncing {
+	0% { left:50px;top:0px;}
+	100% { left:50px;top:300px;}
+}
+
+@keyframes juggle {
+	0% {transform: translateX(110px) translateY(510px) rotate(0deg);}
+	10% {transform: translateX(380px) translateY(510px) rotate(36deg);}
+	20% {transform: translateX(420px) translateY(450px) rotate(72deg);}
+	30% {transform: translateX(380px) translateY(260px) rotate(108deg);}
+	40% {transform: translateX(325px) translateY(125px) rotate(144deg);}
+	50% {transform: translateX(270px) translateY(50px) rotate(180deg);}
+	60% {transform: translateX(220px) translateY(50px) rotate(216deg);}
+	70% {transform: translateX(170px) translateY(125px) rotate(242deg);}
+	80% {transform: translateX(125px) translateY(260px) rotate(278deg);}
+	90% {transform: translateX(85px) translateY(455px) rotate(314deg);}
+	100% {transform: translateX(110px) translateY(510px) rotate(360deg);}
+}
+
+@keyframes lefthand {
+	0% {transform: translateX(65px) translateY(475px) rotate(60deg);}
+	10% {transform: translateX(90px) translateY(530px) ;}
+	33% {transform: translateX(65px) translateY(475px) rotate(60deg);}
+	43% {transform: translateX(90px) translateY(530px) ;}
+	66% {transform: translateX(65px) translateY(475px) rotate(60deg);}
+	76% {transform: translateX(90px) translateY(530px) ;}
+	100% {transform: translateX(65px) translateY(475px) rotate(60deg);}
+}
+
+
+@keyframes righthand {
+	0% {transform: translateX(410px) translateY(460px) rotate(310deg);}
+	20% {transform: translateX(380px) translateY(510px) rotate(360deg);}
+	30% {transform: translateX(420px) translateY(450px) rotate(300deg);}
+	53% {transform: translateX(380px) translateY(510px) rotate(360deg);}
+	63% {transform: translateX(420px) translateY(450px) rotate(300deg);}
+	86% {transform: translateX(380px) translateY(510px) rotate(360deg);}
+	96% {transform: translateX(420px) translateY(450px) rotate(300deg);}
+	100% {transform: translateX(410px) translateY(460px) rotate(310deg);}
+}

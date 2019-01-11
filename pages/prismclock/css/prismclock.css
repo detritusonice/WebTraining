@@ -1,0 +1,27 @@
+body {
+	background-color:#000000;
+	text-align:center;
+	color:#ffffff;
+}
+
+.containerpane {
+	display:block;
+	margin: 100px auto;
+}
+
+.legend {
+	margin:auto;
+	width:500px;
+	height:100px;
+	font-family: verdana;
+	font-size: 50px;
+}
+
+.display {
+	margin:auto;
+	width: 600px;
+	height: 200px;
+	font-family: monospace;
+	font-size: 120px;
+	text-shadow:2px 2px 4px #222222;
+}
