@@ -1,0 +1,78 @@
+body {
+	background-color:#558855;
+}
+
+#container {
+	margin:auto;
+	width:600px;
+	height:600px;
+}
+
+#header {
+	margin:auto;
+	font-family:Monospace;
+	font-size:40px;
+	color:black;
+	display:block;
+	text-align:center;
+}
+
+#dicecontainer{
+	display:block;
+	background-color:#005500;
+	margin: 50px auto;
+	width:500px;
+	height:250px;
+}
+
+.die {
+	position:relative;
+	display: inline-block;
+	float:left;
+	margin:25px;
+	width:200px;
+	height:200px;
+	background-color:#dddddd;
+	border-radius:10%;
+	box-shadow:2px 2px 5px;
+}
+
+.pimple {
+	display:inline-block;
+	position:absolute;
+	background-color:#222222;
+	width:30px;
+	height:30px;
+	border-radius:50%;
+	box-shadow:2px 2px 4px;
+}
+
+#pushbutton {
+	display:block;
+	float:bottom;
+	margin:50px auto;
+	max-width:120px;
+	max-height:50px;
+	background-color:#dd8800;
+	color:#0000ff;
+	font-family:Monospace;
+	font-size:20px;
+	text-align:center;
+	padding:20px;
+	text-shadow:1px 1px 3px;
+	box-shadow:5px 5px 10px;
+	user-select:none;
+}
+
+.shakey {
+	position:relative;
+	animation-name: shakeit;
+	animation-duration:0.1s;
+	animation-iteration-count:10;
+}
+
+@keyframes shakeit {
+	0% { transform: translateX(-5px);}
+	50% {transform: translateX(5px);}
+	100% { transform: translateX(-5px);}
+}

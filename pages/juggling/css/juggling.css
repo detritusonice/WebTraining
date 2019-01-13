@@ -28,8 +28,8 @@ body {
 	width:100px;
 	height:50px;
 	position: absolute;
-	left:100px;
-	top: 0px;
+	left:80px; <?--adjusting the somewhat-off animation coordinates-->
+	top: 20px;
 	z-index:3;
 	animation-name: righthand;
         animation-duration:0.5s;
