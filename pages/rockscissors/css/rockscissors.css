@@ -1,0 +1,99 @@
+body {
+	background-color:#ffddaa;
+	font-family:verdana;
+}
+
+.bandspace {
+	display:block;
+}
+
+
+#playspace {
+	margin:auto;
+	width:800px;
+	height:600px;
+}
+
+#headspace {
+	height:100px;
+	background-color:#ffaa77;
+	box-shadow:0 1px 2px black;
+}
+
+#battlespace {
+	margin-top:5px;
+	max-width:800px;
+	height:500px;	
+	box-shadow:0 1px 5px black;
+	background-color:white;
+}
+
+#buttonspace {
+	margin-top:10px;
+	display:block;
+	height:100px;
+}
+
+.header {
+	display:inline-block;
+	text-align:center;
+	padding:100px;
+	padding-top:35px;
+	font-size:30px;
+}
+
+.weapon {
+	width:300px;
+	height:300px;
+	margin:5px;
+}
+
+.visible {
+	display:inline-block;
+}
+
+.invisible {
+	display:none;
+}
+
+.mybutton {
+	display:inline-block;
+	margin-left:20px;
+	padding:25px;
+	background-color:#33ff77;
+	text-align:center;
+	box-shadow:3px 3px 5px #222222;
+	float:right;
+}
+
+.rightside {
+	float:right;
+}
+
+.leftside {
+	float:left;
+}
+
+.flipped {
+	transform: scaleX(-1);
+}
+
+#result {
+	height:300px;
+	min-width:150px;
+	padding-top:120px;
+	display:inline-block;
+	float:center;
+	text-align:center;
+}
+
+.moving {
+	animation-name: movingHands;
+	animation-duration:0.5s;
+	animation-iteration-count:3;
+}
+
+@keyframes movingHands {
+	0% 100%{transform: translateY(0px);}
+	50% {transform: translateY(100px);}
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>Rock, Paper, Scissors</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/rockscissors.css">
+	</head>
+	<script type="application/javascript" src="js/rockscissors.js"></script>
+	<body onload="init()">
+		<div id="playspace" class="bandspace">
+			<div class="bandspace" id="headspace">
+				<div class="header leftside" id="computer">Computer</div>
+				<div class="header rightside" id="human">Human</div>
+			</div>
+			<div class="bandspace" id="battlespace">
+				<img class="weapon leftside visible" id="lefthand" src="images/lefthand.jpeg">
+				<img class="weapon leftside flipped invisible" id="leftpaper" src="images/paper.jpeg">
+				<img class="weapon leftside flipped invisible" id="leftscissors" src="images/scissors.jpeg">
+				<img class="weapon leftside flipped invisible" id="leftrock" src="images/rock.jpeg">
+				<img class="weapon rightside visible" id="righthand" src="images/righthand.jpeg">
+				<img class="weapon rightside invisible" id="rightpaper" src="images/paper.jpeg">
+				<img class="weapon rightside invisible" id="rightscissors" src="images/scissors.jpeg">
+				<img class="weapon rightside invisible" id="rightrock" src="images/rock.jpeg">
+				<div id="result">Choose your weapon</div>
+			</div>
+			<div class="bandspace" id="buttonspace">
+				<div class="mybutton clickable" id="btn_scissors">Scissors</div>
+				<div class="mybutton clickable" id="btn_paper">Paper</div>
+				<div class="mybutton clickable" id="btn_rock">Rock</div>
+			</div>
+		</div>
+	</body>
+</html>
