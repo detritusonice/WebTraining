@@ -1,0 +1,41 @@
+body {
+	background-color:#444444;
+}
+
+#screen {
+	background-color:black;
+	display: block;
+	width:805px;
+	height:410px;
+	margin:auto;
+	margin-top:100px;
+	border:10px solid black;
+	box-shadow: 3px 3px 10px #111111;
+}
+
+#title {
+	display:block;
+	margin:auto;
+	margin-top:50px;
+	text-align:center;
+	font-family:Monospace;
+	font-size:30px;
+	font-color:#555555;
+	text-shadow:4px 4px 5px #111111;
+}
+
+.scanline {
+	display:block;
+	height:10px;
+	margin:0px;
+}
+
+.particle {
+	margin-top:1px;
+	margin-left:1px;
+	display:inline-block;
+	position:relative;
+	background-color:#222222;
+	width:9px;
+	height:9px;
+}
