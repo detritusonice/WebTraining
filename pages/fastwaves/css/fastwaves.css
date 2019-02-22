@@ -1,0 +1,18 @@
+body {
+	background-color: #333333;
+	color:	#aaaaaa;
+	font-family: Monotype;
+	font-size: 40px;
+	text-align:center;
+}
+
+canvas{
+	background-color:#111111;
+	border:10px black;
+	box-shadow:10px 10px 10px black;
+	height:600px;
+	width:800px;
+	margin-left:auto;
+}
+
+
